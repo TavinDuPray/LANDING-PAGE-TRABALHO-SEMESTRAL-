@@ -1,3 +1,9 @@
+🔗 Landing page
+https://tavindupray.github.io/LANDING-PAGE-TRABALHO-SEMESTRAL-/
+
+🔗 App direto (se quiser pular pro sistema)
+https://tavindupray.github.io/LANDING-PAGE-TRABALHO-SEMESTRAL-/app.html
+
 # FitManager 💪
 
 **Sistema de gestão para Personal Trainers** — Trabalho final de Marketing Digital (ISULPAR · Sistemas de Informação).
