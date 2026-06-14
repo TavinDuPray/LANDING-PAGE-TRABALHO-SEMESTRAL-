@@ -1,0 +1,10 @@
+# Arquivos temporários do Office (lock do Word/PowerPoint)
+~$*
+
+# Configuração local do preview (não é necessária no repositório)
+.claude/
+
+# Dependências e sistema
+node_modules/
+.DS_Store
+Thumbs.db
