@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitManager — App de Gestão</title>
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/app.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💪</text></svg>" />
+</head>
+<body>
+
+  <!-- ===================== LOGIN ===================== -->
+  <div id="loginScreen" class="login-wrap">
+    <form class="login-card" id="loginForm">
+      <div class="login-logo"><span class="mark">💪</span> Fit<span>Manager</span></div>
+      <p class="sub">Acesse o painel do personal trainer</p>
+      <div class="field">
+        <label>E-mail</label>
+        <input type="email" id="loginEmail" value="personal@fitmanager.com" />
+      </div>
+      <div class="field">
+        <label>Senha</label>
+        <input type="password" id="loginPass" value="123456" />
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Entrar no painel</button>
+      <p class="login-hint">Demonstração — use <code>personal@fitmanager.com</code> / <code>123456</code></p>
+      <p class="login-hint"><a href="index.html" style="color:var(--text-muted)">← Voltar para o site</a></p>
+    </form>
+  </div>
+
+  <!-- ===================== APP ===================== -->
+  <div id="appShell" class="app-shell hidden">
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-logo"><span class="mark">💪</span> Fit<span>Manager</span></div>
+      <nav class="sidebar-nav">
+        <button class="nav-item active" data-page="dashboard"><span class="ic">📊</span> Painel</button>
+        <button class="nav-item" data-page="students"><span class="ic">👥</span> Alunos</button>
+        <button class="nav-item" data-page="workouts"><span class="ic">📋</span> Treinos</button>
+        <button class="nav-item" data-page="library"><span class="ic">🎥</span> Exercícios</button>
+        <button class="nav-item" data-page="payments"><span class="ic">💳</span> Pagamentos</button>
+      </nav>
+      <div class="sidebar-foot">
+        <div class="user-chip">
+          <span class="av" id="trainerInitials">CA</span>
+          <div>
+            <div class="nm" id="trainerName">Camila Andrade</div>
+            <div class="rl">Personal Trainer</div>
+          </div>
+        </div>
+        <button class="nav-item" id="logoutBtn" style="margin-top:8px"><span class="ic">🚪</span> Sair</button>
+      </div>
+    </aside>
+    <div class="backdrop" id="backdrop"></div>
+
+    <!-- Main -->
+    <div class="main">
+      <header class="topbar">
+        <div style="display:flex;align-items:center;gap:14px">
+          <button class="sidebar-toggle" id="sidebarToggle">☰</button>
+          <div>
+            <h1 id="pageTitle">Painel</h1>
+            <div class="sub" id="pageSub">Visão geral do seu negócio</div>
+          </div>
+        </div>
+        <div class="topbar-actions" id="topbarActions"></div>
+      </header>
+
+      <!-- Páginas -->
+      <section id="page-dashboard" class="page"></section>
+      <section id="page-students" class="page hidden"></section>
+      <section id="page-workouts" class="page hidden"></section>
+      <section id="page-library" class="page hidden"></section>
+      <section id="page-payments" class="page hidden"></section>
+    </div>
+  </div>
+
+  <!-- Container de modais -->
+  <div id="modalRoot"></div>
+  <!-- Toast -->
+  <div id="toast" class="toast"><span class="ic">✓</span> <span id="toastMsg"></span></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===================== SEO BÁSICO ===================== -->
+  <title>FitManager — Sistema de Gestão para Personal Trainer | Treinos, Alunos e Pagamentos</title>
+  <meta name="description" content="FitManager é o app que organiza seus alunos, monta treinos com fotos e vídeos e controla os pagamentos da mensalidade em um só lugar. Pare de usar planilhas e WhatsApp — profissionalize seu trabalho como personal trainer." />
+  <meta name="keywords" content="personal trainer, gestão de alunos, app de treino, software para personal, mensalidade academia, treino online, ficha de treino, gestão financeira personal" />
+  <meta name="author" content="FitManager" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://fitmanager.com.br/" />
+
+  <!-- Open Graph (redes sociais) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="FitManager — Gestão completa para Personal Trainer" />
+  <meta property="og:description" content="Organize alunos, treinos (com vídeos) e mensalidades em um só app. Teste grátis por 14 dias." />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="FitManager" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FitManager — Gestão para Personal Trainer" />
+  <meta name="twitter:description" content="Treinos com vídeo, gestão de alunos e controle de mensalidades em um só lugar." />
+
+  <!-- Dados estruturados (Schema.org) para SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "FitManager",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "description": "Sistema de gestão para personal trainers: alunos, treinos com vídeo e controle de pagamentos.",
+    "offers": {
+      "@type": "Offer",
+      "price": "49.90",
+      "priceCurrency": "BRL"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "327"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/landing.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💪</text></svg>" />
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="#" class="logo">
+        <span class="logo-mark">💪</span>
+        Fit<span>Manager</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#recursos">Recursos</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#planos">Planos</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="app.html" class="btn btn-ghost">Entrar</a>
+        <a href="app.html" class="btn btn-primary">Testar grátis</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="hero-badge"><span class="dot"></span> +2.000 personais já organizaram seus alunos</span>
+        <h1>Gerencie seus alunos e <span class="grad">multiplique sua renda</span> como personal trainer</h1>
+        <p class="lead">
+          Chega de planilhas bagunçadas e treinos perdidos no WhatsApp. Com o FitManager você monta
+          treinos com <strong>fotos e vídeos</strong>, acompanha cada aluno e controla as mensalidades —
+          tudo em um só lugar.
+        </p>
+        <div class="hero-cta">
+          <a href="app.html" class="btn btn-primary btn-lg">Começar teste grátis de 14 dias →</a>
+          <a href="#como-funciona" class="btn btn-ghost btn-lg">Ver como funciona</a>
+        </div>
+        <div class="hero-trust">
+          <div class="stat"><strong>2.000+</strong><span>Personais ativos</span></div>
+          <div class="stat"><strong>R$ 4,2M</strong><span>Gerenciados/mês</span></div>
+          <div class="stat"><strong>4,9 ★</strong><span>Avaliação média</span></div>
+        </div>
+      </div>
+
+      <!-- Mockup do app -->
+      <div class="hero-mockup">
+        <div class="mockup-bar"><i></i><i></i><i></i></div>
+        <div class="mockup-screen">
+          <div class="mk-row">
+            <span class="mk-title">Painel</span>
+            <span style="font-size:.75rem;color:var(--text-dim)">Junho 2026</span>
+          </div>
+          <div class="mk-cards">
+            <div class="mk-card green"><small>Receita do mês</small><strong>R$ 6.840</strong></div>
+            <div class="mk-card"><small>Alunos ativos</small><strong>38</strong></div>
+          </div>
+          <div class="mk-list">
+            <div class="mk-item">
+              <span class="mk-avatar">MA</span>
+              <div><div class="nm">Marina Alves</div><div class="pl">Plano Trimestral</div></div>
+              <span class="mk-tag paid">Pago</span>
+            </div>
+            <div class="mk-item">
+              <span class="mk-avatar">RC</span>
+              <div><div class="nm">Rafael Costa</div><div class="pl">Plano Mensal</div></div>
+              <span class="mk-tag late">Atrasado</span>
+            </div>
+            <div class="mk-item">
+              <span class="mk-avatar">JS</span>
+              <div><div class="nm">Júlia Souza</div><div class="pl">Plano Mensal</div></div>
+              <span class="mk-tag paid">Pago</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LOGOS / PROVA SOCIAL ===================== -->
+  <div class="logos">
+    <div class="container">
+      <p>Confiado por profissionais de todo o Brasil</p>
+      <div class="logos-row">
+        <span>🏋️ SmartFit</span>
+        <span>🥇 BodyTech</span>
+        <span>⚡ Bio Ritmo</span>
+        <span>💎 Selfit</span>
+        <span>🔥 Panobianco</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== PROBLEMA / FEATURES ===================== -->
+  <section id="recursos">
+    <div class="container">
+      <span class="section-tag">Recursos</span>
+      <h2 class="section-title">Tudo que um personal precisa, sem complicação</h2>
+      <p class="section-subtitle">Pare de juntar WhatsApp, planilha do Excel e caderninho de pagamentos. O FitManager centraliza sua operação.</p>
+
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon">👥</div>
+          <h3>Gestão de alunos</h3>
+          <p>Cadastre seus alunos com dados, objetivos e avaliação física. Veja o histórico completo de cada um em segundos.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">🎥</div>
+          <h3>Treinos com vídeo</h3>
+          <p>Monte fichas de treino e adicione fotos e vídeos de cada exercício. Seu aluno nunca mais erra a execução.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">💳</div>
+          <h3>Controle de mensalidades</h3>
+          <p>Acompanhe quem pagou, quem está atrasado e sua receita mensal. Receba alertas de vencimento automaticamente.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">📊</div>
+          <h3>Painel financeiro</h3>
+          <p>Visualize sua receita, taxa de inadimplência e crescimento. Tome decisões com dados, não no chute.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">📚</div>
+          <h3>Biblioteca de exercícios</h3>
+          <p>Centenas de exercícios prontos com demonstração em vídeo. Reaproveite e monte treinos em minutos.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">📅</div>
+          <h3>Agenda e avaliações</h3>
+          <p>Organize horários, registre avaliações físicas e acompanhe a evolução dos seus alunos ao longo do tempo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== COMO FUNCIONA ===================== -->
+  <section id="como-funciona" style="background:var(--bg-2)">
+    <div class="container">
+      <span class="section-tag">Como funciona</span>
+      <h2 class="section-title">Comece em 3 passos simples</h2>
+      <p class="section-subtitle">Você não precisa ser expert em tecnologia. Em poucos minutos sua operação já está rodando.</p>
+
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step-num">1</div>
+          <h3>Cadastre seus alunos</h3>
+          <p>Adicione seus alunos e defina o plano de cada um (mensal, trimestral ou anual).</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">2</div>
+          <h3>Monte os treinos</h3>
+          <p>Crie fichas com exercícios, séries, repetições e vídeos demonstrativos. Atribua a cada aluno.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">3</div>
+          <h3>Acompanhe e receba</h3>
+          <p>Controle pagamentos, veja sua receita e acompanhe a evolução de cada aluno no painel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PERSONA / PÚBLICO-ALVO ===================== -->
+  <section class="persona">
+    <div class="container">
+      <span class="section-tag">Feito para você</span>
+      <h2 class="section-title">O FitManager nasceu para o personal moderno</h2>
+      <p class="section-subtitle">Se você se identifica com a Camila, o FitManager foi feito para o seu dia a dia.</p>
+
+      <div class="persona-card reveal">
+        <div class="persona-avatar">🧑‍🏫</div>
+        <div class="persona-info">
+          <h3>Camila Andrade, 29 anos</h3>
+          <div class="role">Personal Trainer autônoma · 35 alunos · Curitiba/PR</div>
+          <p>
+            Atende em academia e a domicílio. Ama treinar pessoas, mas perde horas toda semana montando
+            planilhas, cobrando mensalidade no WhatsApp e reenviando os mesmos vídeos de exercício.
+            Quer crescer, profissionalizar o atendimento e parar de perder dinheiro com inadimplência.
+          </p>
+          <div class="persona-pains">
+            <span>😩 Cobrança manual</span>
+            <span>📉 Inadimplência</span>
+            <span>🤳 Treinos no WhatsApp</span>
+            <span>⏰ Falta de tempo</span>
+            <span>📈 Quer escalar</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PLANOS / PRICING ===================== -->
+  <section id="planos">
+    <div class="container">
+      <span class="section-tag">Planos</span>
+      <h2 class="section-title">Um plano que cabe no seu momento</h2>
+      <p class="section-subtitle">Comece grátis e evolua conforme sua carteira de alunos cresce. Cancele quando quiser.</p>
+
+      <div class="pricing-grid">
+        <div class="price-card reveal">
+          <h3>Iniciante</h3>
+          <p class="desc">Para quem está começando</p>
+          <div class="price">Grátis</div>
+          <ul>
+            <li>Até 5 alunos</li>
+            <li>Treinos com fotos</li>
+            <li>Controle de pagamento básico</li>
+            <li>Biblioteca de exercícios</li>
+          </ul>
+          <a href="app.html" class="btn btn-ghost">Começar agora</a>
+        </div>
+
+        <div class="price-card featured reveal">
+          <h3>Profissional</h3>
+          <p class="desc">O mais escolhido pelos personais</p>
+          <div class="price">R$ 49,90<small>/mês</small></div>
+          <ul>
+            <li>Alunos ilimitados</li>
+            <li>Treinos com vídeo</li>
+            <li>Controle financeiro completo</li>
+            <li>Alertas de vencimento</li>
+            <li>Avaliações físicas</li>
+            <li>Painel de métricas</li>
+          </ul>
+          <a href="app.html" class="btn btn-primary">Testar 14 dias grátis</a>
+        </div>
+
+        <div class="price-card reveal">
+          <h3>Studio</h3>
+          <p class="desc">Para equipes e academias</p>
+          <div class="price">R$ 129<small>/mês</small></div>
+          <ul>
+            <li>Tudo do Profissional</li>
+            <li>Até 5 personais</li>
+            <li>Marca personalizada</li>
+            <li>Relatórios avançados</li>
+            <li>Suporte prioritário</li>
+          </ul>
+          <a href="app.html" class="btn btn-ghost">Falar com vendas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DEPOIMENTOS ===================== -->
+  <section id="depoimentos" style="background:var(--bg-2)">
+    <div class="container">
+      <span class="section-tag">Depoimentos</span>
+      <h2 class="section-title">Personais que transformaram o negócio</h2>
+
+      <div class="testi-grid">
+        <div class="testi-card reveal">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Reduzi minha inadimplência em 70%. Agora sei exatamente quem está atrasado e o sistema me avisa. Recuperei dinheiro que eu estava perdendo."</p>
+          <div class="testi-author">
+            <span class="av">LF</span>
+            <div><strong>Lucas Ferreira</strong><span>Personal · São Paulo/SP</span></div>
+          </div>
+        </div>
+        <div class="testi-card reveal">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Meus alunos amam receber os treinos com vídeo. Ficou muito mais profissional e eu consegui dobrar minha carteira de clientes em 6 meses."</p>
+          <div class="testi-author">
+            <span class="av">PR</span>
+            <div><strong>Patrícia Rocha</strong><span>Personal · Curitiba/PR</span></div>
+          </div>
+        </div>
+        <div class="testi-card reveal">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Economizo umas 8 horas por semana que eu gastava com planilha e WhatsApp. Esse tempo virou mais alunos atendidos e mais renda."</p>
+          <div class="testi-author">
+            <span class="av">DM</span>
+            <div><strong>Diego Martins</strong><span>Personal · Florianópolis/SC</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section id="faq">
+    <div class="container">
+      <span class="section-tag">Dúvidas frequentes</span>
+      <h2 class="section-title" style="text-align:center">Perguntas que todo personal faz</h2>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q">Preciso instalar algo no meu computador? <span class="ic">+</span></button>
+          <div class="faq-a"><p>Não. O FitManager funciona direto no navegador, no computador ou no celular. É só acessar e usar.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Meus alunos também usam o app? <span class="ic">+</span></button>
+          <div class="faq-a"><p>Sim! Seus alunos recebem acesso aos treinos com vídeos e podem acompanhar a evolução pelo celular, com a sua marca.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Como funciona o teste grátis? <span class="ic">+</span></button>
+          <div class="faq-a"><p>Você tem 14 dias para usar todos os recursos do plano Profissional sem pagar nada e sem cadastrar cartão. Se gostar, é só assinar.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Posso cancelar quando quiser? <span class="ic">+</span></button>
+          <div class="faq-a"><p>Sim, sem multa e sem burocracia. Você cancela com um clique e mantém o acesso até o fim do período pago.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Meus dados ficam seguros? <span class="ic">+</span></button>
+          <div class="faq-a"><p>Sim. Seus dados são protegidos e em conformidade com a LGPD. Você é o único dono das informações dos seus alunos.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA FINAL ===================== -->
+  <section class="cta-final">
+    <div class="container">
+      <div class="cta-box reveal">
+        <h2>Pronto para profissionalizar seu trabalho?</h2>
+        <p>Junte-se a mais de 2.000 personais que já organizaram seus alunos e aumentaram a renda com o FitManager.</p>
+        <a href="app.html" class="btn btn-primary btn-lg">Criar minha conta grátis →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo"><span class="logo-mark">💪</span> Fit<span>Manager</span></a>
+          <p>O sistema de gestão completo para personal trainers que querem crescer com profissionalismo.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="YouTube">▶️</a>
+            <a href="#" aria-label="WhatsApp">💬</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Produto</h4>
+          <a href="#recursos">Recursos</a>
+          <a href="#planos">Planos</a>
+          <a href="app.html">Entrar</a>
+        </div>
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <a href="#">Sobre</a>
+          <a href="#">Blog</a>
+          <a href="#">Contato</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#">Privacidade</a>
+          <a href="#">Termos de uso</a>
+          <a href="#">LGPD</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 FitManager · Projeto acadêmico — ISULPAR · Sistemas de Informação · Marketing Digital
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/landing.js"></script>
+</body>
+</html>
